@@ -128,3 +128,13 @@ function speedup(){
         alert("🐄🍺");
     }
 }
+
+var div = document.createElement("div");
+        div.style.position="absolute";
+        div.innerHTML = "<img style='opacity:0.6;' src='https://tse1-mm.cn.bing.net/th/id/R-C.b3d3b93322302844b335f83de3c3a2fc?rik=PdZyop6NwWvO1w&riu=http%3a%2f%2fhbimg.b0.upaiyun.com%2f5c65aed72c8bb3c153c8820d3838c6c8560c151323609-HiAFRf_fw658&ehk=s3oO0357ULCRBeDRYv3MTX4lOoYARDAaAzi0AqZktpE%3d&risl=&pid=ImgRaw&r=0' alt='狗头'>";
+        var body = document.getElementsByTagName("body")[0];
+        body.appendChild(div);
+        window.addEventListener("mousemove",function(event){
+            div.style.left = event.pageX + 5 +"px";
+            div.style.top = event.pageY + 5 +"px";
+        },false);
