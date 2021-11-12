@@ -138,3 +138,9 @@ var div = document.createElement("div");
             div.style.left = event.pageX + 5 +"px";
             div.style.top = event.pageY + 5 +"px";
         },false);
+
+window.onkeydown = function(event){
+    if(event.key == "ArrowDown"){
+        speed = 4;
+    }
+}
